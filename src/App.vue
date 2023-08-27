@@ -1,28 +1,25 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="container p-3">
+      <InputOne />
+      <FormValidate />
+      <DateComponent />
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import InputOne from "./components/InputOne.vue"
+import FormValidate from "./components/FormValidate.vue"
+import DateComponent from "./components/DateComponent.vue"
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
+    InputOne,
+    FormValidate,
+    DateComponent,
+  },
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style></style>
