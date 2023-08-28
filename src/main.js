@@ -1,5 +1,8 @@
 import Vue from "vue"
 import App from "./App.vue"
+import VuePersianDatetimePicker from 'vue-persian-datetime-picker';
+Vue.component('date-picker', VuePersianDatetimePicker);
+
 
 import { BootstrapVue, IconsPlugin } from "bootstrap-vue"
 
@@ -36,7 +39,7 @@ extend("alpha", {
 Vue.config.productionTip = false
 Vue.use(VeeValidate)
 Vue.use(BootstrapVue, IconsPlugin)
-Vue.use(require("vue-jalali-moment"))
+
 new Vue({
   render: (h) => h(App),
 }).$mount("#app")
