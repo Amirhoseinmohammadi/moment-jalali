@@ -1,5 +1,5 @@
 <template>
-  <div class="p-5">
+  <div class="p-5 border shadow">
     <ValidationObserver v-slot="{ handleSubmit }">
       <form @submit.prevent="handleSubmit(submited)">
         <ValidationProvider
@@ -34,7 +34,7 @@
 
           <span class="text-danger">{{ errors[0] }}</span>
         </ValidationProvider>
-        <button type="submit">Submit</button>
+        <button class="btn btn-danger m-3" type="submit">Submit</button>
       </form>
     </ValidationObserver>
   </div>
@@ -57,7 +57,7 @@ export default {
   },
   methods: {
     submited() {
-      alert(" Tankyou ")
+      alert(" submited ")
     },
   },
 }

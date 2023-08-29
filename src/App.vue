@@ -1,9 +1,9 @@
 <template>
   <div id="app">
     <div class="container p-3">
-      <InputOne />
+      <InputOne class="my-2" />
       <FormValidate />
-      <DateComponent />
+      <DateComponent class="my-2" />
     </div>
   </div>
 </template>
@@ -12,6 +12,7 @@
 import InputOne from "./components/InputOne.vue"
 import FormValidate from "./components/FormValidate.vue"
 import DateComponent from "./components/DateComponent.vue"
+
 export default {
   name: "App",
   components: {

@@ -1,5 +1,5 @@
 <template>
-  <div class="container p-3">
+  <div class="container border shadow p-3">
     <ValidationProvider rules="required|alpha" v-slot="{ errors }">
       <label class="mx-2" for="name">Name : </label>
       <input v-model="name" id="name" rules="required|alpha" type="text" />
